@@ -5,8 +5,10 @@ x = "MindX"
 print(x)
 print("MindX", "School")
 
-# 2. Cách khai báo biến trong python:
+"""
+2. Cách khai báo biến trong python:
 # <tên biến> = <giá trị>
+"""
 name = "Đào Trung Kiên"
 age = 50
 job = "Developer"
