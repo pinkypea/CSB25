@@ -1,3 +1,5 @@
+# GIỚI THIỆU KHOÁ HỌC
+
 1. Tên khoá học: Computer Science (Basic - Advanced - Intensive)
 2. Số buổi học: 
     - Tổng số buổi học: 14 buổi (không có sản phẩm cuối khoá)
