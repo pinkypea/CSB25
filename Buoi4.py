@@ -1,14 +1,15 @@
-# Tạo các class gồm các thuộc tính và phương thức sau đây:
-#     1. Class HinhChuNhat:
-#         - 2 thuộc tính: Chiều dài, Chiều rộng
-#         - Phương thức get_P() để tính chu vi HinhChuNhat
-#         - Phương thức get_S() để tính diện tích HinhChuNhat
+'''
+Tạo các class gồm các thuộc tính và phương thức sau đây:
+    1. Class HinhChuNhat:
+        - 2 thuộc tính: Chiều dài, Chiều rộng
+        - Phương thức get_P() để tính chu vi HinhChuNhat
+        - Phương thức get_S() để tính diện tích HinhChuNhat
         
-#     2. Class TamGiacVuong kế thừa từ class HinhChuNhat:
-#         - 2 thuộc tính: 2 cạnh góc vuông là Chiều dài và Chiều rộng của HinhChuNhat
-#         - Phương thức get_S() để tính diện tích TamGiac
-#         - Phương thức get_hypotenuse() để tính độ dài cạnh huyền tam giác
-
+    2. Class TamGiacVuong kế thừa từ class HinhChuNhat:
+        - 2 thuộc tính: 2 cạnh góc vuông là Chiều dài và Chiều rộng của HinhChuNhat
+        - Phương thức get_S() để tính diện tích TamGiac
+        - Phương thức get_hypotenuse() để tính độ dài cạnh huyền tam giác
+'''
 import math
 class HinhChuNhat:
     def __init__(self, chieu_dai, chieu_rong):
@@ -35,6 +36,8 @@ tamgiac1 = TamGiacVuong(10, 5)
 print(tamgiac1.get_S())
 print(tamgiac1.get_hypotenuse())
 
+'''Sử dụng lớp trừu tượng (abstract class) đã có sẵn trong Python'''
+
 from abc import ABC, abstractmethod
 class MonAn(ABC):
     @abstractmethod
@@ -48,12 +51,12 @@ class MonChinh(MonAn):
 class MonTrangMieng(MonAn):
     def chuan_bi(self):
         print("Chuẩn bị món tráng miệng")
-
-# Hãy xây dựng một hệ thống trừu tượng PaymentMethod mô phỏng các hình thức thanh toán khác nhau:
-# 1. Thanh toán bằng tiền mặt
-# 2. Thanh toán chuyển khoản
-# 3. Thanh toán quẹt thẻ
-
+'''
+Hãy xây dựng một hệ thống trừu tượng PaymentMethod mô phỏng các hình thức thanh toán khác nhau:
+1. Thanh toán bằng tiền mặt
+2. Thanh toán chuyển khoản
+3. Thanh toán quẹt thẻ
+'''
 from abc import ABC, abstractmethod
 
 # Bước 1: Tạo lớp trừu tượng PaymentMethod
