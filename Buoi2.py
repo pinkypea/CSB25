@@ -102,4 +102,3 @@ for i in range(10, 0, -1):
     print(i)
 
 # Yêu cầu ngừoi dung nhập 1 chuỗi và in ra các chữ cái nằm trong chuỗi
-"Phuong"
