@@ -1,4 +1,4 @@
-# class: Khuôn để tạo ra các objects
+'''class: Khuôn để tạo ra các objects'''
 
 class Dog:
     # Phương thức __init__ để khởi tạo các thuộc tính cho class
