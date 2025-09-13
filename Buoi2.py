@@ -102,3 +102,46 @@ for i in range(10, 0, -1):
     print(i)
 
 # Yêu cầu ngừoi dung nhập 1 chuỗi và in ra các chữ cái nằm trong chuỗi
+
+
+'''Đọc và ghi file'''
+# 1. Mở file với mode "r"
+file = open("students.txt", "r", encoding="utf-8")
+
+# 2. Đọc toàn bộ nội dung file
+content = file.read()
+
+# 3. Đọc từng dòng
+content = file.readline()
+
+# 4. Đọc các dòng thành 1 list, mỗi phần tử là 1 dòng
+content = file.readlines()
+print(content)
+
+# 5. Đóng file
+file.close()
+
+# 6. Ghi nội dùng vào file bằng mode "w"
+file = open("grades.txt", "w", encoding="utf-8")
+file.write("10\n")
+file.write("9\n")
+
+# 7. Ghi thêm nội dung vào file
+file = open("grades.txt", "a", encoding="utf-8")
+file.write("9.5\n")
+
+# 8. Dùng with để an toàn hơn:
+with open("input.txt", "r", encoding="utf-8") as file:
+    print(file.read())
+
+with open("output.txt", "w", encoding="utf-8") as file:
+    file.write("Hello World\n")
+
+# 9. Xử lý lỗi: Tránh trường hợp file không tồn tại trên máy tính:
+try:
+    file = open("grades.txt", "r")
+    content = file.read()
+except FileNotFoundError:
+    print("File not found")
+finally:
+    file.close()
