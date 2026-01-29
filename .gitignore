@@ -1,4 +1,3 @@
-./myenv
-./Reference
-.Lesson3
-.gitignore
+myenv/
+Reference/
+.Lesson3/
