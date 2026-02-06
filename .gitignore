@@ -1,4 +1,5 @@
 myenv/
 Reference/
-Lesson3/
+Lesson3/asl-alphabet/
+Lesson3/model.keras
 .gitignore
